@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby -Ilib
+
+require "calcentral_config_generator"
+
+CalCentralConfigGenerator.new(ARGV).call

@@ -1,0 +1,9 @@
+Host dbtunnel
+  ServerAliveInterval 60
+  ServerAliveCountMax 10
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+  HostName ets-calcentral-dev-01.ist.berkeley.edu
+  User <%= user %> <% forwards.each do |forward| %>
+  <%= forward %><% end %>
